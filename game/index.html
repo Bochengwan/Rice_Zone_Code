@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My game</title>
+    <meta charset = "UTF-8">
+    <meta name="description" content="This is the game Candy or Bomb">
+    <meta name="author" content="Bocheng Wan">
+    <script src="jquery-3.5.1.min.js"></script>
+    <script src="mygame.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+<br>
+    <h1>Candy or Bomb?</h1>
+    <p>Game starts in Easy mode.With survive time increasing, the difficulty(survive level) will increase.</p>
+    <p>When your mouse is inside the interface, the basket will move with your mouse</p>
+    <p>Bomb will damage your HP, don't let your HP below 0. Get as many candies as possible and live as long as possible!</p>
+    <input id="restart" tyoe="button" class="btn btn-info" value="Restart">
+
+    </br>
+
+    <img src = "basket.png" id = "basket" hidden>
+    <img src = "candy.png" id = "candy" hidden>
+    <img src = "bomb.png" id = "bomb" hidden>
+    <img src = "bombeffect.png" id = "bombeffect" hidden>
+
+
+    <p>Best score: <span id = "bs">0</span>   Best time: <span id="bt">0</span> seconds</p>
+    <p>HP: <span id = "hp">100</span>   Score: <span id="score">0</span></p>
+    <p>Survive time: <span id = "st">0</span> seconds. Current difficulty: <span id ="diff">0</span> level</p>
+
+
+
+    <div id="canvasDiv">
+        <canvas id="myCanvas" width="600" height="600"></canvas>
+    </div>
+
+</body>
+</html>
